@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Article = ({ article }) => {
   // Extraer los datos
@@ -33,6 +34,10 @@ const Article = ({ article }) => {
       </div>
     </div>
   )
+}
+
+Article.propTypes = {
+  article: PropTypes.object.isRequired
 }
 
 export default Article
